@@ -15,7 +15,7 @@
   become_user: root
   get_url:
     url: '{{gosu_url}}'
-    checsum: '{{gosu_checksum}}'
+    checksum: '{{gosu_checksum}}'
     dest: '{{gosu_target_bin}}'
     mode: 0755
 
