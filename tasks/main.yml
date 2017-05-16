@@ -16,7 +16,7 @@
   get_url:
     url: '{{gosu_url}}'
     checsum: '{{gosu_checksum}}'
-    dest: '{{gostu_target_bin}}'
+    dest: '{{gosu_target_bin}}'
     mode: 0755
 
 - name: link gosu...
