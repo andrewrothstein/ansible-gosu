@@ -1,8 +1,8 @@
-andrewrothstein.rolename
+andrewrothstein.gosu
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-rolename.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-rolename)
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-gosu.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-gosu)
 
-A brief description of the andrewrothstein.rolename goes here.
+Installs [gosum](https://github.com/tianon/gosu).
 
 Requirements
 ------------
@@ -25,7 +25,7 @@ Example Playbook
 ```yml
 - hosts: servers
   roles:
-    - andrewrothstein.rolename
+    - andrewrothstein.gosu
 ```
 
 License
