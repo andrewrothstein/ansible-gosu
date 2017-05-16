@@ -25,3 +25,4 @@
   file:
     src: '{{gosu_target_bin}}'
     dest: '{{gosu_target_link}}'
+    state: link
