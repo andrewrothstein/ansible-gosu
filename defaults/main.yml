@@ -1,0 +1,18 @@
+---
+# defaults file for gosu
+gosu_ver: '1.10'
+
+# https://github.com/tianon/gosu/releases/download/1.10/SHA256SUMS
+gosu_checksums:
+  amd64: sha256:5b3b03713a888cee84ecbf4582b21ac9fd46c3d935ff2d7ea25dd5055d302d3c
+  arm64: sha256:3ebbff47692c3d9f0c3b6500727e277cb23d621feebcac0cc3d9e382d62d1acb
+  armel: sha256:ebacb14d7cd2bd74406fa3c46299f2b8b79f8d77095e3720764281ec46eb1148
+  armhf: sha256:18b9daca61a6f7fad1d3030e081d0632cc0ab1c0ecf43e0f9bae7a64c63e097c
+  i386: sha256:2dfac0dd8830ebccea486d90472b48e68de5a543d9fb50bea933bbe6a9c8d610
+  ppc64: sha256:1da4ffd2a213c2a51609588ac0e506c03f15ef5943ae44d24150dfecdc2a3ea4
+  ppc64el: sha256:6c280687ce1db7eb8565079c410da1bfaaad4769b09bdfa192efbd224a2abc1c
+  s390x: sha256:eee778f95f225946a331c1fce5c3d9dc03b840522defd61b66d916ce84d94d51
+
+gosu_mirror: https://github.com/tianon/gosu/releases/download
+gosu_arch: amd64
+gosu_install_dir: /usr/local/bin
