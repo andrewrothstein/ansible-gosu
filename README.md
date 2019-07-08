@@ -2,7 +2,7 @@ andrewrothstein.gosu
 =========
 [![Build Status](https://travis-ci.org/andrewrothstein/ansible-gosu.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-gosu)
 
-Installs [gosum](https://github.com/tianon/gosu).
+Installs [gosu](https://github.com/tianon/gosu).
 
 Requirements
 ------------

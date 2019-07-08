@@ -3,15 +3,15 @@
   become: yes
   become_user: root
   get_url:
-    url: '{{gosu_url}}'
-    checksum: '{{gosu_checksum}}'
-    dest: '{{gosu_target_bin}}'
+    url: '{{ gosu_url }}'
+    checksum: '{{ gosu_checksum }}'
+    dest: '{{ gosu_target_bin }}'
     mode: 0755
 
 - name: link gosu...
   become: yes
   become_user: root
   file:
-    src: '{{gosu_target_bin}}'
-    dest: '{{gosu_target_link}}'
+    src: '{{ gosu_target_bin }}'
+    dest: '{{ gosu_target_link }}'
     state: link

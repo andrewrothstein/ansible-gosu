@@ -1,8 +1,8 @@
 ---
 # vars file for gosu
-gosu_bin: gosu-{{gosu_arch}}
-gosu_url: '{{gosu_mirror}}/{{gosu_ver}}/{{gosu_bin}}'
+gosu_bin: gosu-{{ gosu_arch }}
+gosu_url: '{{ gosu_mirror }}/{{ gosu_ver }}/{{ gosu_bin }}'
+gosu_checksum: '{{ gosu_checksums[gosu_ver][gosu_arch] }}'
 
-gosu_checksum: '{{gosu_checksums[gosu_arch]}}'
-gosu_target_bin: '{{gosu_install_dir}}/gosu-{{gosu_ver}}'
-gosu_target_link: '{{gosu_install_dir}}/gosu'
+gosu_target_bin: '{{ gosu_install_dir }}/gosu-{{ gosu_ver }}'
+gosu_target_link: '{{ gosu_install_dir }}/gosu'
