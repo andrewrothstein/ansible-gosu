@@ -1,33 +1,40 @@
 #!/usr/bin/env sh
-VER='1.11'
+set -e
 DIR=~/Downloads
-MIRROR=https://github.com/tianon/gosu/releases/download/$VER
-
-RSHASUMS=$MIRROR/SHA256SUMS
-LSHASUMS=$DIR/gosu-SHA256SUMS-$VER
-
-if [ ! -e $LSHASUMS ]
-then
-    wget -q -O $LSHASUMS $RSHASUMS
-fi
+MIRROR=https://github.com/tianon/gosu/releases/download
 
 dl()
 {
-    PLATFORM=$1
-    FILE=gosu-$PLATFORM
-    printf "    %s: sha256:%s\n" $PLATFORM `egrep -e $FILE\$ $LSHASUMS | awk '{print $1}'`
+    local ver=$1
+    local lshasums=$2
+    local arch=$3
+    local file="gosu-${arch}"
+    local url="${MIRROR}/${ver}/${file}"
+    printf "    # %s\n" $url
+    printf "    %s: sha256:%s\n" $arch `egrep -e "$file\$" $lshasums | awk '{print $1}'`
 }
 
-printf "  # %s\n" $RSHASUMS
-printf "  '%s':\n" $VER
-dl amd64
-dl arm64
-dl armel
-dl armhf
-dl i386
-dl ppc64
-dl ppc64el
-dl s390x
+dl_ver() {
+    local ver=$1
 
+    local rshasums="$MIRROR/${ver}/SHA256SUMS"
+    local lshasums="$DIR/gosu-${ver}-SHA256SUMS"
 
+    if [ ! -e $lshasums ];
+    then
+        wget -q -O $lshasums $rshasums
+    fi
 
+    printf "  # %s\n" $rshasums
+    printf "  '%s':\n" $ver
+    dl $ver $lshasums amd64
+    dl $ver $lshasums arm64
+    dl $ver $lshasums armel
+    dl $ver $lshasums armhf
+    dl $ver $lshasums i386
+    dl $ver $lshasums mips64el
+    dl $ver $lshasums ppc64el
+    dl $ver $lshasums s390x
+}
+
+dl_ver ${1:-1.12}

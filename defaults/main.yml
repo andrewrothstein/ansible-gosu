@@ -1,28 +1,58 @@
 ---
 # defaults file for gosu
-gosu_ver: '1.11'
-gosu_mirror: https://github.com/tianon/gosu/releases/download
+gosu_ver: '1.12'
 gosu_arch: amd64
+gosu_install_dir: /usr/local/bin
 
+gosu_mirror: https://github.com/tianon/gosu/releases/download
 gosu_checksums:
   # https://github.com/tianon/gosu/releases/download/1.10/SHA256SUMS
   '1.10':
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-amd64
     amd64: sha256:5b3b03713a888cee84ecbf4582b21ac9fd46c3d935ff2d7ea25dd5055d302d3c
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-arm64
     arm64: sha256:3ebbff47692c3d9f0c3b6500727e277cb23d621feebcac0cc3d9e382d62d1acb
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-armel
     armel: sha256:ebacb14d7cd2bd74406fa3c46299f2b8b79f8d77095e3720764281ec46eb1148
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-armhf
     armhf: sha256:18b9daca61a6f7fad1d3030e081d0632cc0ab1c0ecf43e0f9bae7a64c63e097c
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-i386
     i386: sha256:2dfac0dd8830ebccea486d90472b48e68de5a543d9fb50bea933bbe6a9c8d610
-    ppc64: sha256:1da4ffd2a213c2a51609588ac0e506c03f15ef5943ae44d24150dfecdc2a3ea4
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-ppc64el
     ppc64el: sha256:6c280687ce1db7eb8565079c410da1bfaaad4769b09bdfa192efbd224a2abc1c
+    # https://github.com/tianon/gosu/releases/download/1.10/gosu-s390x
     s390x: sha256:eee778f95f225946a331c1fce5c3d9dc03b840522defd61b66d916ce84d94d51
   # https://github.com/tianon/gosu/releases/download/1.11/SHA256SUMS
   '1.11':
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-amd64
     amd64: sha256:0b843df6d86e270c5b0f5cbd3c326a04e18f4b7f9b8457fa497b0454c4b138d7
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-arm64
     arm64: sha256:5e279972a1c7adee65e3b5661788e8706594b458b7ce318fecbd392492cc4dbd
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-armel
     armel: sha256:8a22dee6ec3ac84f7679aa7aeae1e9cac7dea2d7be14aa6b26a676ebcda40be9
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-armhf
     armhf: sha256:171b4a2decc920de0dd4f49278d3e14712da5fa48de57c556f99bcdabe03552e
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-i386
     i386: sha256:97fdc04c59fc6eeb2a43f3c81a7925b56f164fd4267491fad72c7669cb32a8cf
-    ppc64: sha256:c4b1cc4e79ca46acbe7fed91528fdd53f1e3899cc063d18b171f2df6ff575876
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-ppc64el
     ppc64el: sha256:caeb47892267c82c6208a11a15ba114aaf9af80450bf99dd74c89ea5b97f2a7a
+    # https://github.com/tianon/gosu/releases/download/1.11/gosu-s390x
     s390x: sha256:c208f0a8a2d47739efda10696430709537d5737628adbda599ea7f84dc3e6be5
-gosu_install_dir: /usr/local/bin
+  # https://github.com/tianon/gosu/releases/download/1.12/SHA256SUMS
+  '1.12':
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-amd64
+    amd64: sha256:0f25a21cf64e58078057adc78f38705163c1d564a959ff30a891c31917011a54
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-arm64
+    arm64: sha256:ff6f0b36315d2013d4fcc442cded0e0403d6bb29abc4cd6f94f2bde90bf97a38
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-armel
+    armel: sha256:fe12225dbbf2ef181d6330485df8ce516ae01ad6e708debe9628245194ba7718
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-armhf
+    armhf: sha256:8768127e22410b74edf6bab39e732ff41f260d69b2e30891ade3634e9aa11b81
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-i386
+    i386: sha256:b6d52a786ae04b3b04556dffa184243e8fc035aa1108c3bade921cc1b6c9e047
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-mips64el
+    mips64el: sha256:f63255db03253908a563dff12ab74e52f81db233e35d6ce92e3df36b38ff7b4b
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-ppc64el
+    ppc64el: sha256:d5070d349e77fd682d61a7caf4f82dc471617754bba0eb9cef54ebf2be2e7291
+    # https://github.com/tianon/gosu/releases/download/1.12/gosu-s390x
+    s390x: sha256:42797db5dab422dd39b9eb03f98c58a144a0c543062687986a7ac34de049a5bd
