@@ -2,5 +2,9 @@
 ---
 - hosts: all
   roles:
-    - role: '{{playbook_dir}}'
-      
+  - role: '{{playbook_dir}}'
+  tasks:
+  - command: /usr/local/bin/gosu --version
+    register: gosu_test_output
+  - debug:
+      msg: '{{ gosu_test_output.stdout }}'
