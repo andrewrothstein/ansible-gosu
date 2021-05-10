@@ -19,15 +19,13 @@ galaxy_info:
         - 8
     - name: Debian
       versions:
+        - bullseye
         - buster
         - stretch
     - name: Fedora
       versions:
         - 31
         - 32
-    - name: Gentoo
-      versions:
-        - all
     - name: Ubuntu
       versions:
         - bionic

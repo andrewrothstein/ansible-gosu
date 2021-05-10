@@ -5,5 +5,6 @@
   tasks:
   - command: /usr/local/bin/gosu --version
     register: gosu_test_output
-  - debug:
+  - name: gosu --version
+    debug:
       msg: '{{ gosu_test_output.stdout }}'

@@ -1,5 +1,5 @@
 ---
-- name: download gosu...
+- name: downloading {{ gosu_url }}
   become: yes
   become_user: root
   get_url:
@@ -8,7 +8,7 @@
     dest: '{{ gosu_target_bin }}'
     mode: 0755
 
-- name: link gosu...
+- name: linking {{ gosu_target_link }} to {{ gosu_target_bin }}
   become: yes
   become_user: root
   file:
