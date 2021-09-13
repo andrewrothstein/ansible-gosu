@@ -1,6 +1,6 @@
 ---
 # defaults file for gosu
-gosu_ver: '1.12'
+gosu_ver: '1.14'
 gosu_arch: amd64
 gosu_install_dir: /usr/local/bin
 
@@ -56,3 +56,39 @@ gosu_checksums:
     ppc64el: sha256:d5070d349e77fd682d61a7caf4f82dc471617754bba0eb9cef54ebf2be2e7291
     # https://github.com/tianon/gosu/releases/download/1.12/gosu-s390x
     s390x: sha256:42797db5dab422dd39b9eb03f98c58a144a0c543062687986a7ac34de049a5bd
+  # https://github.com/tianon/gosu/releases/download/1.13/SHA256SUMS
+  '1.13':
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-amd64
+    amd64: sha256:6f333f520d31e212634c0777213a5d4f8f26bba1ab4b0edbbdf3c8bff8896ecf
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-arm64
+    arm64: sha256:578b2c70936cae372f6826585f82e76de5858342dd179605a8cb58d58828a079
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-armel
+    armel: sha256:416b9beb7a40604a0d1a467126dd6ccd3aa55c0aa5d3d212a4da3bd86e85aa63
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-armhf
+    armhf: sha256:33e421b84b3f746e7353ac2e7c9f199c5beef5a3b2b7a013b591a9af25d84919
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-i386
+    i386: sha256:393febe855a2f01cb45163e09e4a21dc83d541bbd924ff5cc25dd0429c501ac9
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-mips64el
+    mips64el: sha256:adc58982edf6392a9f024bb0b7199e7c8cc5d753fb38c6db798b25a21ffcca31
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-ppc64el
+    ppc64el: sha256:0ad95f2c39e1548c51bab6db81e6231b8c12113e90cfa28bc945f31d459def01
+    # https://github.com/tianon/gosu/releases/download/1.13/gosu-s390x
+    s390x: sha256:a13e30e021b4019a139e23fba1550eb2f45a9faeee863a389fa618bb001e3023
+  # https://github.com/tianon/gosu/releases/download/1.14/SHA256SUMS
+  '1.14':
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-amd64
+    amd64: sha256:bd8be776e97ec2b911190a82d9ab3fa6c013ae6d3121eea3d0bfd5c82a0eaf8c
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-arm64
+    arm64: sha256:73244a858f5514a927a0f2510d533b4b57169b64d2aa3f9d98d92a7a7df80cea
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-armel
+    armel: sha256:2b5cea6453dff56728f22abe446f9fa9722a7b95f6086442d3a9f01b88a6345e
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-armhf
+    armhf: sha256:abb1489357358b443789571d52b5410258ddaca525ee7ac3ba0dd91d34484589
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-i386
+    i386: sha256:fa12da9c07783fe5fb2c2a81b5d4277eec7615c957a0b0cce3f14802ff9372e7
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-mips64el
+    mips64el: sha256:8837346f70d8f3875904e196341a681a31979b65f364709fec509c194493680a
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-ppc64el
+    ppc64el: sha256:b8b0d1e632ca0745590e9496fb3e099471d42e3a2f6fc5e64311a86e863cd367
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-s390x
+    s390x: sha256:0d95de235e7058d8a13b17716c7e194f40c276e2ae54aa932260bc1403cbaacf
