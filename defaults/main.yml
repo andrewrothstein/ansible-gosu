@@ -90,5 +90,7 @@ gosu_checksums:
     mips64el: sha256:8837346f70d8f3875904e196341a681a31979b65f364709fec509c194493680a
     # https://github.com/tianon/gosu/releases/download/1.14/gosu-ppc64el
     ppc64el: sha256:b8b0d1e632ca0745590e9496fb3e099471d42e3a2f6fc5e64311a86e863cd367
+    # https://github.com/tianon/gosu/releases/download/1.14/gosu-riscv64
+    riscv64: sha256:5c1ab40c408c368f4931b62fc82053911f15e8c52e45ff4553ab909eee0b97bd
     # https://github.com/tianon/gosu/releases/download/1.14/gosu-s390x
     s390x: sha256:0d95de235e7058d8a13b17716c7e194f40c276e2ae54aa932260bc1403cbaacf

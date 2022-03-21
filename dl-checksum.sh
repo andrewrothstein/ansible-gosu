@@ -22,7 +22,7 @@ dl_ver() {
 
     if [ ! -e $lshasums ];
     then
-        wget -q -O $lshasums $rshasums
+        curl -sSLf -o $lshasums $rshasums
     fi
 
     printf "  # %s\n" $rshasums
@@ -34,6 +34,7 @@ dl_ver() {
     dl $ver $lshasums i386
     dl $ver $lshasums mips64el
     dl $ver $lshasums ppc64el
+    dl $ver $lshasums riscv64
     dl $ver $lshasums s390x
 }
 
