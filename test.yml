@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.gosu
+  hosts: all
   roles:
-  - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: /usr/local/bin/gosu --version
-    register: gosu_test_output
-  - name: gosu --version
-    debug:
-      msg: '{{ gosu_test_output.stdout }}'
+    - name: Executing 'gosu --version'
+      ansible.builtin.command: /usr/local/bin/gosu --version
+      changed_when: false
+      register: gosu_test_output
+    - name: Output from 'gosu --version'
+      ansible.builtin.debug:
+        msg: '{{ gosu_test_output.stdout }}'

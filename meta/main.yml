@@ -1,34 +1,34 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: installs gosu
   company: BlackRock
-  license:
-    - MIT
-  min_ansible_version: 2.0
+  description: installs gosu
+  galaxy_tags:
+    - development
+  license: MIT
+  min_ansible_version: '2.0'
+  namespace: andrewrothstein
   platforms:
     - name: Alpine
       versions:
         - all
-    - name: Archlinux
+    - name: ArchLinux
       versions:
         - all
-    - name: EL
-      versions:
-        - 8
     - name: Debian
       versions:
+        - bookworm
         - bullseye
-        - buster
+    - name: EL
+      versions:
+        - '8'
+        - '9'
     - name: Fedora
       versions:
-        - 35
-        - 36
+        - '38'
+        - '39'
     - name: Ubuntu
       versions:
-        - bionic
         - focal
-  galaxy_tags:
-    - development
-
-dependencies: []
+        - jammy
+  role_name: gosu

@@ -1,5 +1,6 @@
 ---
 # vars file for gosu
+gosu_arch: '{{ gosu_arch_map[ansible_architecture] }}'
 gosu_bin: gosu-{{ gosu_arch }}
 gosu_url: '{{ gosu_mirror }}/{{ gosu_ver }}/{{ gosu_bin }}'
 gosu_checksum: '{{ gosu_checksums[gosu_ver][gosu_arch] }}'

@@ -1,17 +1,17 @@
 ---
-- name: downloading {{ gosu_url }}
+- name: Downloading {{ gosu_url }}
   become: true
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ gosu_url }}'
     checksum: '{{ gosu_checksum }}'
     dest: '{{ gosu_target_bin }}'
-    mode: 0755
+    mode: '755'
 
-- name: linking {{ gosu_target_link }} to {{ gosu_target_bin }}
+- name: Linking {{ gosu_target_link }} to {{ gosu_target_bin }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ gosu_target_bin }}'
     dest: '{{ gosu_target_link }}'
     state: link
